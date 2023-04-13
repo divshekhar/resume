@@ -16,10 +16,15 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v2
-        with:
-          root_file: '*.tex'
+#       - name: Compile LaTeX document
+#         uses: xu-cheng/latex-action@v2
+#         with:
+#           root_file: '*.tex'
+
+      - name: Compile resumes
+        run: |
+          find . -type f -name '*.tex' -print0 | xargs -0 -I {} sh -c 'latexmk -pdf {}'
+        working-directory: ${{ github.workspace }}
         
       - name: Post Processing 
         run: |
