@@ -19,7 +19,7 @@ jobs:
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
-          root_file: resume.tex
+          root_file: '*.tex'
         
       - name: Post Processing 
         run: |
@@ -28,7 +28,7 @@ jobs:
           cp index.html build/
           
       - name: Git add
-        run: git add resume.pdf
+        run: git add '*.pdf'
       
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.0
