@@ -1,0 +1,272 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks, colorlinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\hypersetup{%
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    citecolor = black,    
+    urlcolor=teal,
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\role}[1]{\textit{\Large #1}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pdfgentounicode=1
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Divyanshu Shekhar} \\ \vspace{2pt}
+    \role{Python Developer (Internship/Full-Time)} \\ \vspace{2pt}
+    \href{mailto:imdshekhar@gmail.com}{\faicon{envelope} \underline{imdshekhar@gmail.com}} $|$  
+    \href{https://linkedin.com/in/dshekhar17}{\faicon{linkedin} \underline{LinkedIn}} $|$
+    \href{https://github.com/divshekhar}{\faicon{github} \underline{GitHub}} $|$
+    \href{tel:+919110013305} {\faicon{phone} \underline{+919110013305}}
+\end{center}
+
+%------------ADDRESS-------------
+\section{Address}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \small Bhim Nagar, Aliganj road, Banka, Bihar 813102, India
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+% \section{Experience}
+%   \resumeSubHeadingListStart
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    % \resumeSubheading
+    %   {\href{https://play.google.com/store/apps/details?id=org.elitecaps.tyup}{Tyup : Student Social Media \& Community Platform}}{India}
+    %   {Founder \& App Developer}{July 2021 -- Present}
+    %   \resumeItemListStart
+    %     \resumeItem{Building a competent team from scratch as a startup company}
+    %     \resumeItem{Integrated back-end \& front-end of the application}
+    %     \resumeItem{Contribution to prototyping \& app development}
+    %     \resumeItem{Building strategic marketing and business development plans}
+        
+    
+    %   \resumeItemListEnd
+    % \resumeSubheading
+    %   {Major League Hacking}{Remote}
+    %   {Engineering Fellow}{January 2021 -- April 2021}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed the CryptoDrive using Web3, Solidity and React, gained 100 of users in first release.}
+    %     \resumeItem{Researched on decentralized networks and developed a decentralized file storage service. }
+    %     \resumeItem{Awarded as Fellow from Major League Hacking(150 Fellows from 40,000) Received winning prize for CryptoDrive as a global winner.}
+       
+    %  \resumeItemListEnd
+
+
+%   \resumeSubHeadingListEnd
+
+
+%-----------Project Experience-----------
+\section{Project Experience}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/divshekhar/AutoGit}{AutoGit: Sync Remote and Local Computer}}{ [Python, TKinter, Selenium, Shell]}}{December 2019}
+          \resumeItemListStart
+           \resumeItem{Enables users to create, sync, maintain, and delete Github repositories on remote and local computers.}
+           \resumeItem{Implemented a user-friendly interface that allows users to easily manage their Github repositories.}
+           \resumeItem{Utilized Selenium for web automation to automate the process of creating and deleting repositories on Github.}
+           \resumeItem{Ensured seamless synchronization of local and remote repositories using Python's GitPython library to provide a hassle-free experience for users.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/divshekhar/Flask-Blog}{Flask Blog: CMS for Blogging}}{ [Python, Flask, SQL]}}{December 2019}
+          \resumeItemListStart
+           \resumeItem{Developed a blogging system in Python using Flask and SQL for seamless integration and performance.}
+           \resumeItem{Implemented CRUD functionality allowing users to create, read, update, and delete blog posts with ease.}
+           \resumeItem{Utilized version control with Git and agile methodologies to ensure project success.}
+           \resumeItem{Ensured seamless synchronization of local and remote repositories using Python's GitPython library to provide a hassle-free experience for users.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/divshekhar/docker_node_api}{\textbf{Blog API : Scalable Backend Solution}}}{ [ Node, Express, MongoDB, Docker ]}}{July 2021}
+          \resumeItemListStart
+            \resumeItem{Developed and implemented RESTful API using Express.js, JWT, Validator \& Mongoose}
+            \resumeItem{Integrated MongoDB as database for efficient storage, retrieval, and management of data.}
+            \resumeItem{Proficient in utilizing Postman to test APIs and ensure their functionality.}
+            \resumeItem{Used Docker Compose for multi-container, load balancing and fault tolerance, increased efficiency by 90\%.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------Online Portfolio-----------
+\section{Online Portfolio}
+
+\resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://hackthedeveloper.com} {Hack The Developer : Code. Hack. Master. }}{[Wordpress]}}{ April 2020 - Present}
+          \resumeItemListStart
+           \resumeItem{Demonstrated expertise in many programming languages and trending technologies.}
+           \resumeItem{Optimized blog content using SEO techniques to improve search engine rankings and increase website traffic.}
+           \resumeItem{Hosted on AWS EC2, successfully retains a monthly user base of over 30,000.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------Awards and Certifications:-----------
+\section{Awards and Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \resumeItemListStart
+            \resumeItem{\textbf{\href{https://www.linkedin.com/posts/dshekhar17_hultprize2022-hultprizekiit-kiituniversity-activity-6899007358467743746-6hZ3}{Hult Prize 2022 On-Campus Winner}}: Led the design and development team, Won 1st Prize, for creating a student connectivity app to enable project collaboration easy with \textit{proof-of-skill} and \textit{proof-of-work} concept.}
+            
+      \resumeItemListEnd
+
+      \resumeItemListStart
+            \resumeItem{\textbf{\href{https://www.credly.com/go/vqTzHzec}{AWS Academy Graduate - Cloud Semester 1}}: Successfully completed and developed proficiency in using AWS core services such as EC2, S3, CloudFront, RDS and IAM, through hands-on labs and assignments.}
+            
+      \resumeItemListEnd
+    }}
+ \end{itemize}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+% \section{Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%       \textbf{Languages}{: C language, C++, Java, Python, Dart, JavaScript, Go, Typescript, Assembly, Shell, SQL } \\
+%       \textbf{Databases}{: MySQL, MongoDB, DynamoDB, Redis, phpMyAdmin} \\
+%       \textbf{Libraries}{: React, Babel, Webpack, Flask, NumPy, OpenCV, Pandas, PyTorch, TensorFlow, Spacy, Scikit-learn} \\
+%      \textbf{Frameworks}{: Flutter, GTK+, Node.js, Express.js, Angular, Django } \\
+%      \textbf{Tools}{: Linux, Git, Scrum, Amazon Web Services (AWS), Microsoft Azure, Docker, Postman, Makefile } \\
+%     }}
+%  \end{itemize}
+
+\section{Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+            \resumeItemListStart
+                \resumeItem{ Python $|$ C/C++ $|$ Java $|$ JavaScript $|$ Shell $|$ SQL $|$ MongoDB $|$ Redis}
+                \resumeItem{ Flask $|$ Django $|$ Numpy $|$ OpenCV $|$ Pandas $|$ TKinter $|$ React $|$ Redux $|$ Linux $|$ Git $|$ Scrum $|$ AWS $|$ Docker}
+                \resumeItem{ Software Developement $|$ Design Pattern $|$ Microservices $|$ Distributed Systems $|$ Frontend $|$ Backend $|$ Full-Stack}
+                \resumeItem{ English, Hindi - \textit{All professional proficiency or above}}
+            \resumeItemListEnd
+        }}
+    \end{itemize}
+ 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kalinga Institute of Industrial Technology (KIIT) (BTech CSE)} {Bhubaneswar, Odisha}
+      {Pre-final (Third) year, CGPA 8.6}{2020 -- Expected. 2024}
+
+    \resumeSubheading
+      {Kairali School (CBSE)}{Ranchi, Jharkhand}
+      {12th Grade, 90\%}{2019}
+
+    \resumeSubheading
+      {Saint Joseph's School (ICSE)}{Banka, Bihar}
+      {10th Grade, 93\%}{2017}
+  \resumeSubHeadingListEnd
+\end{document}
