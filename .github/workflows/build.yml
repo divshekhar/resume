@@ -33,7 +33,9 @@ jobs:
           cp index.html build/
           
       - name: Git add
-        run: git add '*.pdf'
+        run: |
+          git config --global --add safe.directory /__w/resume/resume
+          git add '*.pdf'
       
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.0
