@@ -1,0 +1,380 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks, colorlinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+\hypersetup{%
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,
+    citecolor = black,    
+    urlcolor=teal,
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand{\role}[1]{\textit{\Large #1}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pdfgentounicode=1
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Divyanshu Shekhar} \\ \vspace{2pt}
+    \role{Software Engineer (Full-Time)} \\ \vspace{2pt}
+    \href{mailto:imdshekhar@gmail.com}{\faicon{envelope} \underline{imdshekhar@gmail.com}} $|$  
+    \href{https://linkedin.com/in/dshekhar17}{\faicon{linkedin} \underline{LinkedIn}} $|$
+    \href{https://github.com/divshekhar}{\faicon{github} \underline{GitHub}} $|$
+    \href{tel:+919110013305} {\faicon{phone} \underline{+919110013305}}
+\end{center}
+
+%------------ADDRESS-------------
+% \section{Address}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \item \small Bhim Nagar, Aliganj road, Banka, Bihar 813102, India
+% \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    % \resumeSubheading
+    %   {\href{https://play.google.com/store/apps/details?id=org.elitecaps.tyup}{Tyup : Student Social Media \& Community Platform}}{India}
+    %   {Founder \& App Developer}{July 2021 -- Present}
+    %   \resumeItemListStart
+    %     \resumeItem{Building a competent team from scratch as a startup company}
+    %     \resumeItem{Integrated back-end \& front-end of the application}
+    %     \resumeItem{Contribution to prototyping \& app development}
+    %     \resumeItem{Building strategic marketing and business development plans}
+
+    \resumeSubheading
+    {UndrAds}{Gurgaon}
+    {Founding Engineer}{January 2024 -- June 2024}
+        \resumeItemListStart
+            \resumeItem{Built a high-performance ad serving system using Prebid, Amazon, and Google Ad Manager, handling over \textbf{1 billion daily ad requests with 900ms response time}.}
+            \resumeItem{Developed a mediation \textbf{SDK for mobile apps} with dynamic ad serving through Google AdMob integration.}
+            \resumeItem{Automated campaign workflows and real-time bidding logic to optimize revenue without adding latency.}
+        \resumeItemListEnd
+
+    % \resumeSubheading
+    % {Zero}{Bangalore}
+    % {Co-founder}{August 2024 -- December 2024}
+    %     \resumeItemListStart
+    %         \resumeItem{Developed a SaaS product for dynamic internal linking, enhancing SEO performance across client websites.}
+    %         \resumeItem{Led a team and \textbf{secured 10+ enterprise clients}, driving revenue growth through strategic partnerships.}
+    %         \resumeItem{Designed and implemented a GTM strategy, successfully \textbf{onboarding 100+ users}.}
+    %     \resumeItemListEnd
+
+    \resumeSubheading
+    {GoComet}{Bangalore}
+    {Backend Developer Intern}{February 2024 -- August 2024}
+        \resumeItemListStart
+            \resumeItem{Led and developed analytics dashboard using the ADA stack (Airbyte, DBT, Airflow), saving \textbf{60\% of time.}}
+            \resumeItem{\textbf{Increased leads by 30\%} through innovative SEO and targeted ad campaigns, aligning with business goals.}
+            \resumeItem{Researched target customers, refining strategies with stakeholders.}
+        \resumeItemListEnd
+
+    % \resumeSubheading
+    % {Listed Inc. (OpenInApp)}{Bangalore}
+    % {Backend Developer Intern}{December 2023 -- February 2024}
+    %     \resumeItemListStart
+    %         \resumeItem{Optimized REST APIs and MySQL Database to increase the efficiency of API calls by 90\%.}
+    %         \resumeItem{Improved payment gateway system by 40\% using Razorpay SDK and webhooks.}
+    %         \resumeItem{Promoted adoption of \textbf{Docker} and \textbf{db migrations}, resulting in a \textbf{60\%} improvement in deployment processes.}
+    %     \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Tyup}{Remote}
+    %   {Back-end Engineer}{June 2021 -- July 2022}
+    %   \resumeItemListStart
+    %         \resumeItem{Developed APIs for managing user authentication and posts, used Google Cloud APIs.}
+    %        \resumeItem{Efficiently managed users over 5,000, high user engagement with a monthly average of 1000 active users.}
+    %        \resumeItem{Managed CI/CD pipeline integration using GitHub Actions Workflow, code reviews, unit/integration/e2e testing}
+    %     \resumeItemListEnd
+        
+    
+    %   \resumeItemListEnd
+    % \resumeSubheading
+    %   {Major League Hacking}{Remote}
+    %   {Engineering Fellow}{January 2021 -- April 2021}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed the CryptoDrive using Web3, Solidity and React, gained 100 of users in first release.}
+    %     \resumeItem{Researched on decentralized networks and developed a decentralized file storage service. }
+    %     \resumeItem{Awarded as Fellow from Major League Hacking(150 Fellows from 40,000) Received winning prize for CryptoDrive as a global winner.}
+       
+    %  \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+
+%-----------Project Experience-----------
+\section{Project Experience}
+
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/divshekhar/DemonOS}{\textbf{DemonOS}}}{ [Assembly, C, Makefile, Shell, Qemu]}}{July 2021}
+            \resumeItemListStart
+                \resumeItem{Implemented key system components including Interrupt Descriptor Table (IDT), Global Descriptor Table (GDT), Programmable Interrupt Controller (PIC), and A20 line with a focus on switching from real to protected mode.}
+                % \resumeItem{Developed basic input/output functionality using C language for writing to the terminal.}
+                \resumeItem{Leveraged Makefile and Shell scripting to compile and build executable files, and created .iso files for distribution.}
+                \resumeItem{Utilized Qemu for effective debugging and testing of the operating system.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{\href{https://github.com/divshekhar/DevScript}{\textbf{DevScript}}}{ [Golang]}}{April 2023}
+            \resumeItemListStart
+                \resumeItem{Built a fully functional interpreted programming language from scratch.}
+                \resumeItem{Implemented core features including AST generation, expression parsing, and function execution.}
+                \resumeItem{Wrote comprehensive test cases covering tokens, literals, expressions, statements, and function logic.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    
+    % \resumeSubHeadingListStart
+    %   \resumeProjectHeading
+    %       {\textbf{\href{https://play.google.com/store/apps/details?id=org.elitecaps.tyup}{Tyup : Student \& University Collaboration }}{[ Flutter, Dart, Java, Docker ]}}{June 2021 -- June 2022}
+    %       \resumeItemListStart
+    %        \resumeItem{Led the team, designed and implemented scalable and secure APIs for managing user authentication and posts, used Google Cloud APIs, hosted on AWS that served thousand of requests daily.}
+    %        \resumeItem{Efficiently managed users over 5,000, high user engagement with a monthly average of 1000 active users.}
+    %        \resumeItem{Continuous Integration/Deployment pipeline integration using GitHub Actions Workflow, pull requests, code reviews, load/stress testing, unit/integration/e2e testing}
+    %       \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/marketplace/workflow-reporter}{Workflow Reporter : Streamline failed workflow}}{[ Typescript, Probot, GitHub API, Postman ]}}{January 2022}
+          \resumeItemListStart
+           \resumeItem{Used GitHub Developer REST API to fetch Pull Request and Failed Actions data to use it as custom messages.}
+           \resumeItem{Used Docker Compose for multi-container, load balancing, and fault tolerance, increased efficiency by 90\%.}
+           \resumeItem{Deployed to Heroku with over 50 subscribed customers, resulting in successful implementation and adoption.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    % \resumeSubHeadingListStart
+    %   \resumeProjectHeading
+    %       {\textbf{\href{https://github.com/divshekhar/docker_node_api}{\textbf{Blog API: Scalable Backend Solution}}}{ [ Node, Express, MongoDB, Docker ]}}{July 2021}
+    %       \resumeItemListStart
+    %         \resumeItem{Developed and implemented RESTful API using Express.js, JWT, Validator \& Mongoose}
+    %         \resumeItem{Integrated MongoDB as a database for efficient storage, retrieval, and management of data.}
+    %         \resumeItem{Proficient in utilizing Postman to test APIs and ensure their functionality.}
+    %         \resumeItem{Used Docker Compose for multi-container, load balancing and fault tolerance, increased efficiency by 90\%.}
+    %       \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://play.google.com/store/apps/details?id=com.hackthedeveloper.recite}{Recite : All-in-one Text-to-speech android app for web \& PDF}}{[ Flutter, Dart, Java, Docker ]}}{April 2021}
+          \resumeItemListStart
+           \resumeItem{Integrated multi-language voice support using Google TTS and Spacy NLP Model for precise sentence detection.}
+           % \resumeItem{Led the team, designed and developed responsive front-end, used Bloc \& Provider for state management}
+           \resumeItem{Reached 10,000+ downloads with a monthly average of 2,000 active users through sustained efforts.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    % \resumeSubHeadingListStart
+    %   \resumeProjectHeading
+    %       {\textbf{\href{https://github.com/dorbus/flexboard}{Flexboard : React component library for re-sizable sidebars}}{[ React, Typescript ]}}{November 2022}
+    %       \resumeItemListStart
+    %         \resumeItem{Led the team, set up the project structure, integrated continuous integration \& deployed to NPM registry.}
+    %         \resumeItem{Achieved outstanding community popularity with more than 300 GitHub stars and 100 weekly \href{https://www.npmjs.com/package/@dorbus/flexboard}{NPM} downloads.}
+    %       \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+
+    % \resumeSubHeadingListStart
+    %   \resumeProjectHeading
+    %       {\textbf{\href{https://github.com/DevsOnFlutter}{DevsOnFlutter : Flutter Open-Source Community }}{[ Flutter, Dart, Java ]}}{June 2021}
+    %       \resumeItemListStart
+    %       \resumeItem{Demonstrated expertise in working with and contributing to open-source projects related to Flutter}
+    %        % \resumeItem{\textbf{Plugins:} \href{https://pub.dev/packages/flutter_shortcuts}{Flutter Shortcuts},
+    %        %  \href{https://pub.dev/packages/flutter_process_text}{Flutter Process Text}, \href{https://pub.dev/packages/reflex}{Reflex},
+    %        %  \textbf{Packages:}
+    %        %  \href{https://pub.dev/packages/path_animator}{Path Animator}, \href{https://pub.dev/packages/snackbar_extension}{Snackbar Extension}}
+    %        \resumeItem{Recognized in the Flutter community for contributions and expertise, 85\%+ popularity, 100+ likes on \href{https://pub.dev/publishers/hackthedeveloper.com/packages}{@pub.dev}.}
+    %       \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+    
+  % \resumeSubHeadingListStart
+  %     \resumeProjectHeading
+  %         {\textbf{\href{https://github.com/divshekhar/DemonOS}{\textbf{DemonOS}}}{ [Assembly, C, Makefile, Shell, Qemu]}}{July 2021}
+  %         \resumeItemListStart
+  %           \resumeItem{Created an operating system from scratch}
+  %           \resumeItem{Implemented IDT, GDT, PIC with A20 line enabled \& switching real to protected mode}
+  %           \resumeItem{Implemented basic input output using c language to write on terminal}
+  %           \resumeItem{Used Makefile and Shell to compile and build the executable to .iso file, Qemu to run \& debug}
+  %         \resumeItemListEnd
+  %   \resumeSubHeadingListEnd
+    
+    % \resumeSubHeadingListStart
+    %   \resumeProjectHeading
+    %       {\textbf{\href{https://pub.dev/packages/AutoGit}{AutoGit }}{[ Python, TKinter, Selenium, Shell ]}}{December 2019}
+    %       \resumeItemListStart
+    %        \resumeItem{\textbf{Problem:} Creating \& initializing git in remote and local computer}
+    %        \resumeItem{\textbf{Solution:} Built an open-source software for automating repository creation \& deletion both on remote }
+    %        \resumeItem{ Created an automated system using selenium and GUI using Tkinter}
+    %       \resumeItemListEnd
+    % \resumeSubHeadingListEnd
+
+%-----------Online Portfolio-----------
+\section{Online Portfolio}
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://hackthedeveloper.com} {hackthedeveloper.com : Code. Hack. Master. }}{[ WordPress, AWS, LiteSpeed ]}}{ April 2020 - Present}
+          \resumeItemListStart
+           \resumeItem{Demonstrated SEO expertise to rank blogs and tutorials for many trending technologies.}
+           \resumeItem{Hosted on AWS, LiteSpeed Server, SEO Optimized, successfully retains a monthly user base of over 60,000.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------Awards and Certifications:-----------
+\section{Achievements}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \resumeItemListStart
+            \resumeItem{\textbf{\href{https://www.linkedin.com/posts/dshekhar17_hultprize2022-hultprizekiit-kiituniversity-activity-6899007358467743746-6hZ3}{Hult Prize 2022 On-Campus Winner}}: Won 1st Prize, for creating a student connectivity app.}
+
+            \resumeItem{\textbf{\href{https://www.credly.com/go/vqTzHzec}{AWS Academy Graduate - Cloud Semester 1}}: Hands-on experience in EC2, S3, CloudFront, RDS, \& IAM.}
+
+            \resumeItem{Solved more than 500 \textbf{\href{https://leetcode.com/dshekhar17/}{LeetCode}} and Data Structure and Algorithm (DSA) Questions.}
+            
+      \resumeItemListEnd
+      
+    }}
+ \end{itemize}
+
+%
+%-----------PROGRAMMING SKILLS-----------
+% \section{Skills}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%       \textbf{Languages}{: C language, C++, Java, Python, Dart, JavaScript, Go, Typescript, Assembly, Shell, SQL } \\
+%       \textbf{Databases}{: MySQL, MongoDB, DynamoDB, Redis, phpMyAdmin} \\
+%       \textbf{Libraries}{: React, Babel, Webpack, Flask, NumPy, OpenCV, Pandas, PyTorch, TensorFlow, Spacy, Scikit-learn} \\
+%      \textbf{Frameworks}{: Flutter, GTK+, Node.js, Express.js, Angular, Django } \\
+%      \textbf{Tools}{: Linux, Git, Scrum, Amazon Web Services (AWS), Microsoft Azure, Docker, Postman, Makefile } \\
+%     }}
+%  \end{itemize}
+
+\section{Skills}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+        \small{\item{
+            \resumeItemListStart
+                \resumeItem{ C/C++ $|$ Java $|$ Python $|$ JavaScript $|$ Dart $|$ Go $|$ TypeScript $|$ Shell $|$ SQL $|$ MongoDB $|$ Redis}
+                \resumeItem{ Prebid $|$ React $|$ Redux $|$ Flutter $|$ Node $|$ Express $|$ Angular $|$ Flask $|$ Django $|$ Linux $|$ Git $|$ Scrum $|$ AWS $|$ Docker}
+                \resumeItem{ Software Development $|$ Design Pattern $|$ Microservices $|$ Distributed Systems $|$ Frontend $|$ Backend $|$ Full-Stack}
+                \resumeItem{ English, Hindi - \textit{All professional proficiency or above}}
+            \resumeItemListEnd
+        }}
+    \end{itemize}
+ 
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kalinga Institute of Industrial Technology (KIIT) (BTech CSE)} {Bhubaneswar, Odisha}
+      {Graduate, CGPA 9.0}{2020 -- 2024}
+  \resumeSubHeadingListEnd
+\end{document}
